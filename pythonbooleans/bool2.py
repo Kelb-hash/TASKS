@@ -1,8 +1,15 @@
 def has_common_member(list1, list2, list3, list4, list5, list6, list7, list8, list9, list10):
-    """
-    This function takes 10 lists as input and returns True if they have at least one common member.
-    """
+    
     for element in list1:
+        for element in list2:
+            for element in list3:
+                for element in list4:
+                    for element in list5:
+                        for element in list6:
+                            for element in list7:
+                                for element in list8:
+                                    for element in list9:
+                                        for element in list10:
         if element in list2 or element in list3 or element in list4 or element in list5 or element in list6 or element in list7 or element in list8 or element in list9 or element in list10:
             return True
     return False
