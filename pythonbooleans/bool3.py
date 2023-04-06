@@ -7,7 +7,7 @@ def is_student_adult(): #this function calculates the age of student and returns
     date_of_birth = int(input("input year of birth: "))
     age = current_year  -  date_of_birth
     if age >= 18:
-        print(True)
+        print(bool(age))
     else:
         print(False)
 
