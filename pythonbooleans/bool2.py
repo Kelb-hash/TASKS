@@ -9,6 +9,7 @@ list8 = [22, 23, 24]
 list9 = [25, 26, 27]
 list10 = [28, 29, 30]
 
+#function that takes 10 lists and returns true if they have at least one common member
 
 
 def has_common_member():
