@@ -1,29 +1,35 @@
-list1 = [1, 2, 3]
-list2 = [4, 5, 6]
-list3 = [7, 1, 9]
-list4 = [10, 11, 12]
-list5 = [13, 14, 15]
-list6 = [16, 17, 18]
-list7 = [19, 20, 1]
-list8 = [22, 23, 24]
-list9 = [25, 26, 27]
-list10 = [28, 29, 30]
 
-#function that takes 10 lists and returns true if they have at least one common member
+ 
+
+# List of numbers
+list1 = [1, 2, 3, 4]
+list2 = [5, 6, 7, 8]
+list3 = [9, 10, 11, 12]
+list4 = [13, 14, 15, 16]
+list5 = [17, 18, 19, 20]
+list6 = [21, 22, 23, 24]
+list7 = [25, 26, 27, 28]
+list8 = [29, 30, 31, 32]
+list9 = [33, 34, 35, 36]
+list10 = [37, 38, 39, 71]
+
+# getting the common elements by using set intersection 
+common = set(list1) & set(list2) or set(list1) & set(list3) or set(list1) & set(list4) or set(list1)\
+        & set(list5) or set(list1) & set(list6) or set(list1) & set(list7) or set(list1) & set(list8)\
+        or set(list1) & set(list9) or set(list1) & set(list10) or set(list2) & set(list3) or set(list2)\
+        & set(list4) or set(list2) & set(list5) or set(list2)& set(list6) or set(list2) & set(list7)\
+        or set(list2) & set(list8) or set(list2)& set(list9) or set(list2) & set(list10)\
+        or set(list3) & set(list4) or set(list3)& set(list5) or set(list3) & set(list6) or set(list3)& set(list7)\
+        or set(list3) & set(list8) or set(list3)& set(list9) or set(list3) & set(list10) or set(list4)& set(list5)\
+        or set(list4) & set(list6) or set(list4)& set(list7) or set(list4) & set(list8) or set(list4)& set(list9)\
+        or set(list4) & set(list10) or set(list5)& set(list6) or set(list5) & set(list7) or set(list5)& set(list8)\
+        or set(list5) & set(list9) or set(list5)& set(list10) or set(list6) & set(list7) or set(list6)& set(list8)\
+        or set(list6) & set(list9) or set(list6)& set(list10) or set(list7) & set(list8) or set(list7)& set(list9)\
+        or set(list7) & set(list10) or set(list8)& set(list9) or set(list8) & set(list10) or set(list9)& set(list10)
 
 
-def has_common_member():
-    
-    for element in list1:
-        if element in list2 or element in list3 or element in list4 or element in list5 or element in list6 or element in list7 or element in list8 or element in list9 or element in list10:
-            return True
-    return False
 
-
-if has_common_member():
-    print("TRUE")
+if common:
+    print(bool(common))
 else:
-    print("FALSE")
-
-
-has_common_member()
+    print(False)
