@@ -32,4 +32,4 @@ common = set(list1) & set(list2) or set(list1) & set(list3) or set(list1) & set(
 if common:
     print(bool(common))
 else:
-    print(False)
+    print(())
