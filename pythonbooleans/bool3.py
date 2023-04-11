@@ -9,7 +9,7 @@ def is_student_adult(): #this function calculates the age of student and returns
     if age >= 18:
         print(bool(age))
     else:
-        print(())
+        print(bool())
 
 
 
