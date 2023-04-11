@@ -13,7 +13,7 @@ list8 = [29, 30, 31, 32]
 list9 = [33, 34, 35, 36]
 list10 = [37, 38, 39, 71]
 
-# getting the common elements by using set intersection 
+
 common = set(list1) & set(list2) or set(list1) & set(list3) or set(list1) & set(list4) or set(list1)\
         & set(list5) or set(list1) & set(list6) or set(list1) & set(list7) or set(list1) & set(list8)\
         or set(list1) & set(list9) or set(list1) & set(list10) or set(list2) & set(list3) or set(list2)\
